@@ -2,37 +2,69 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
+}
+
+input:focus {
+  outline: whitesmoke;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.logo {
+  padding: 0.2em 0.5em;
+}
+
+.logo-title {
+  font-family: "Anton";
+  font-size: 1.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.searchForm {
+  margin: 0 auto;
+  border-radius: 0.1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputSearch {
+  width: 30em;
+  font-size: 1em;
+}
+
+.searchButton {
+}
+
+.videos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.video {
+  margin: 0.5em 0.15em;
+}
+
+.info {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.title {
+  margin-top: 0.2em;
+  color: darkgrey;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
